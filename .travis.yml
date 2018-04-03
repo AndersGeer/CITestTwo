@@ -4,9 +4,7 @@ language: objective-c
 osx_image: xcode61
 rvm:
 - 2.1.2
-
 install:
-- sudo chmod a+x ./Script/Install.sh
-- ./Scripts/Install.sh
+- sudo ./Scripts/Install.sh
 script:
-- sudo -E ./Scripts/build.sh
+- sudo ./Scripts/build.sh
