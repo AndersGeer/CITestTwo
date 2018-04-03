@@ -5,6 +5,6 @@ osx_image: xcode61
 rvm:
 - 2.1.2
 install:
-- sudo ./Scripts/Install.sh
+- sudo bash ./Scripts/Install.sh
 script:
-- sudo ./Scripts/build.sh
+- sudo bash ./Scripts/build.sh
