@@ -6,7 +6,7 @@ rvm:
 - 2.1.2
 
 install:
- - sudo chmod a+x /Script/Install.sh
+- sudo chmod a+x /Script/Install.sh
 - ./Scripts/Install.sh
 script:
 - sudo -E ./Scripts/build.sh
