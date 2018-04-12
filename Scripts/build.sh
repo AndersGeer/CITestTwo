@@ -10,10 +10,10 @@ echo "Attempting to build $project for OS X"
   -batchmode \
   -nographics \
   -silent-crashes \
+  -logFile \
   -projectPath $(pwd) \
-  -logFile
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \ 
-  -testResults $(pwd)/unityTests.log \
+  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -testResults $(pwd)/unity.log \
   -testPlatform editmode \
   -runTests\
   -quit
