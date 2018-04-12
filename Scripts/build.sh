@@ -10,7 +10,6 @@ echo "Attempting to build $project for OS X"
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile $(pwd)/unity.log \
   -projectPath $(pwd) \
   -testResults $(pwd)/unity.log \
   -testPlatform editmode \
