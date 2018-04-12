@@ -9,6 +9,8 @@ echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -runTests \
+  -testResults $(pwd)/unityTests.log \
+  -testPlatform editmode \
   -nographics \
   -silent-crashes \
   -logFile $(pwd)/unity.log \
@@ -18,3 +20,5 @@ echo "Attempting to build $project for OS X"
 
 echo 'Logs from build'
 cat $(pwd)/unity.log
+echo 'Logs from test'
+cat $(pwd)/unityTests.log
