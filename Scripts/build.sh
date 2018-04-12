@@ -12,7 +12,6 @@ echo "Attempting to build $project for OS X"
   -silent-crashes \
   -logFile $(pwd)/unity.log \
   -projectPath $(pwd) \
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
   -testResults $(pwd)/unity.log \
   -testPlatform editmode \
   -runTests\
