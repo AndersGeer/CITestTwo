@@ -7,16 +7,10 @@ project="ci-build"
 
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
- -runTests 
- -projectPath $(pwd) 
- -testResults $(pwd)/unityTests.xml 
- -testPlatform editmode 
- -batchmode
- -nographics
- -silent-crashes
- -logFile $(pwd)/unity.log
- -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app"
- -quit
+ -runTests \
+ -projectPath $(pwd) \
+ -testResults $(pwd)/unityTests.xml \
+ -testPlatform editmode \
  
 
 ls /Users/travis/build/flaps16/CITestTwo/
