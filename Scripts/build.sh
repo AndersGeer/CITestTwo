@@ -8,7 +8,7 @@ project="ci-build"
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
-  -testResults $(pwd)/unity.log \
+  -editorTestsResultFile $(pwd)/unity.log \
   -testPlatform editmode \
   -runEditorTests \
   -nographics \
