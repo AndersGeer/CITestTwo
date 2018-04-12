@@ -13,7 +13,7 @@ echo "Attempting to build $project for OS X"
   -projectPath $(pwd) \
   -logFile $(pwd)/unity.log \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \ 
-  -testResults $(pwd)/unity.log \
+  -testResults $(pwd)/unityTests.log \
   -testPlatform editmode \
   -runTests\
   -quit
