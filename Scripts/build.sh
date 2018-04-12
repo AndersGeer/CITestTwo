@@ -11,10 +11,13 @@ echo "Attempting to build $project for OS X"
   -nographics \
   -silent-crashes \
   -projectPath $(pwd) \
+  -logFile $(pwd)/unity.log \
+  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \ 
   -testResults $(pwd)/unity.log \
   -testPlatform editmode \
   -runTests\
   -quit
 
+ls /Users/travis/build/flaps16/CITestTwo/
 echo 'Logs from build'
 cat $(pwd)/unity.log
