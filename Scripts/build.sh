@@ -8,14 +8,14 @@ project="ci-build"
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
-  -editorTestsResultFile $(pwd)/unity.log \
-  -testPlatform editmode \
-  -runEditorTests \
   -nographics \
   -silent-crashes \
   -logFile $(pwd)/unity.log \
   -projectPath $(pwd) \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -testResults $(pwd)/unity.log \
+  -testPlatform editmode \
+  -runTests\
   -quit
 
 echo 'Logs from build'
