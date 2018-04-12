@@ -10,7 +10,7 @@ echo "Attempting to build $project for OS X"
  -runTests \
  -projectPath $(pwd) \
  -testResults $(pwd)/unityTests.xml \
- -testPlatform editmode \
+ -testPlatform editmode 
  
 
 ls /Users/travis/build/flaps16/CITestTwo/
