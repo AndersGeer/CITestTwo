@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 508, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 107
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1037
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 342}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 49
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 50
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -288,8 +288,7 @@ MonoBehaviour:
     y: 92
     width: 505
     height: 966
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 12}
     newResultList:
@@ -456,7 +455,6 @@ MonoBehaviour:
     y: 92
     width: 1058
     height: 576
-  m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -482,7 +480,6 @@ MonoBehaviour:
     y: 92
     width: 387
     height: 966
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
   m_GlobalObjectTypeName: 
   m_RegisteredViewURLs:
@@ -515,7 +512,6 @@ MonoBehaviour:
     y: 689
     width: 1411
     height: 369
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -540,7 +536,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1e270000
     m_LastClickedID: 10014
-    m_ExpandedIDs: 00000000522900005e290000b4290000b6290000b8290000ba290000bc290000be290000
+    m_ExpandedIDs: 00000000b6260000c82600000427000006270000082700000a2700000c2700000e270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +564,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000522900005e290000b4290000b6290000b8290000ba290000bc290000be290000
+    m_ExpandedIDs: 00000000b6260000c82600000427000006270000082700000a2700000c2700000e270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -649,7 +645,6 @@ MonoBehaviour:
     y: 92
     width: 505
     height: 966
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -683,12 +678,11 @@ MonoBehaviour:
     y: 92
     width: 349
     height: 576
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: d6f5ffff24faffff00000000
+    m_ExpandedIDs: befaffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -737,7 +731,6 @@ MonoBehaviour:
     y: 92
     width: 1058
     height: 576
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 0
   m_2DMode: 0
@@ -755,7 +748,6 @@ MonoBehaviour:
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
-    showParticleSystems: 1
   grid:
     xGrid:
       m_Target: 0
@@ -814,7 +806,6 @@ MonoBehaviour:
     y: 92
     width: 1148
     height: 576
-  m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -891,4 +882,3 @@ MonoBehaviour:
     y: 689
     width: 1411
     height: 369
-  m_PersistentViewDataDictionary: {fileID: 0}
