@@ -17,7 +17,8 @@ echo "Attempting to build $project for Windows"
   -editorTestsResultFile $(pwd)/unityTestsWin.log \
   -testResults $(pwd)/unityTestsWin.xml \
   -testPlatform editmode \
-  -runEditorTests					
+  -runEditorTests \
+  -runTests
 
 echo 'Logs from windows build'
 cat $(pwd)/unityWin.log
@@ -34,7 +35,8 @@ echo "Attempting to build $project for OS X"
   -editorTestsResultFile $(pwd)/unityTests.log \
   -testResults $(pwd)/unityTests.xml \
   -testPlatform editmode \
-  -runEditorTests
+  -runEditorTests \
+  -runTests
 
 ls /Users/travis/build/flaps16/CITestTwo/
 echo 'Logs from build'
