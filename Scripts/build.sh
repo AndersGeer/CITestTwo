@@ -10,13 +10,16 @@ echo "Attempting to build $project for Windows"
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile $(pwd)/unity.log \
+  -logFile $(pwd)/unityWin.log \
   -projectPath $(pwd) \
   -buildWindowsPlayer "$(pwd)/Build/windows/$project.exe" \
-  -testResults $(pwd)/unityTests.xml \
+  -testResults $(pwd)/unityTestsWin.xml \
   -testPlatform editmode \
   -runTests \
   -quit									
+
+echo 'Logs from windows build'
+cat $(pwd)/unityWin.log
 
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
