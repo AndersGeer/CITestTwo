@@ -13,7 +13,7 @@ echo "Attempting to build $project for Windows"
   -logFile $(pwd)/unityWin.log \
   -projectPath $(pwd) \
   -buildWindowsPlayer "$(pwd)/Build/windows/$project.app" \
-  -testResults $(pwd)/unityWinTests.xml \
+  -testResults /unityWinTests.xml \
   -runTests \
   -quit
 
@@ -29,7 +29,7 @@ echo "Attempting to build $project for OS X"
   -logFile $(pwd)/unity.log \
   -projectPath $(pwd) \
   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
-  -testResults $(pwd)/unityTests.xml \
+  -testResults /unityTests.xml \
   -runTests \
   -quit
 
