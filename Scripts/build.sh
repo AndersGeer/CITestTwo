@@ -17,7 +17,7 @@ echo "Attempting to build $project for Windows"
   -runTests \
   -quit
 
-find ~/ -type f -name "unityWin.log"
+
 echo 'Logs from windows build'
 cat $(pwd)/unityWin.log
 
@@ -33,6 +33,11 @@ echo "Attempting to build $project for OS X"
   -runTests \
   -quit
 
+echo ´-----------------------------'
 ls /Users/travis/build/flaps16/CITestTwo/
+echo ´-----------------------------'
+find ~/ -type f -name "unityWinTests.xml"
+find ~/ -type f -name "unityTests.xml"
+echo ´-----------------------------'
 echo 'Logs from build'
 cat $(pwd)/unity.log
