@@ -10,7 +10,7 @@ echo "Attempting to build $project for Windows"
 -batchmode \
 -nographics \
 -silent-crashes\
--logFile $(pwd)/unity.log \
+-logFile $(pwd)/unityWin.log \
 -projectPath $(pwd) \
 -buildWindowsPlayer "$(pwd)/Build/windows/$project.app" \
 -testResults $(pwd)/unityWinTests.xml \
