@@ -32,7 +32,9 @@ echo "Attempting to build $project for OS X"
   -testResults /unityTests.xml \
   -runTests \
   -quit
-
+echo "-----------------------------"
+find . -type d | grep UnityExtensions
+echo "-----------------------------"
 
 echo "Attempting to test $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
