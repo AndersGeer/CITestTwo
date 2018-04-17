@@ -37,7 +37,7 @@ echo "Attempting to build $project for OS X"
 echo "Attempting to test $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -runTests \
-  -projectPath $(pwd) \
+  -projectPath /Users/travis/build/flaps16/CITestTwo/ \
   -testResults /unityTests.log \
   -testPlatform editmode \
   -quit
