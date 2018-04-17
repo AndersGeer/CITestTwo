@@ -33,7 +33,7 @@ echo "Attempting to build $project for OS X"
   -runTests \
   -quit
 echo "-----------------------------"
-find . -type d | grep UnityExtensions
+ls /Applications/Unity/Unity.app/Contents/MacOS/Unity/
 echo "-----------------------------"
 
 echo "Attempting to test $project for OS X"
