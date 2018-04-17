@@ -33,6 +33,14 @@ echo "Attempting to build $project for OS X"
   -runTests \
   -quit
 
+
+echo "Attempting to test $project for OS X"
+/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+  -runTests \
+  -projectPath $(pwd) \
+  -testResults /unityTests.xml \
+  -testPlatform editmode
+  
 echo "-----------------------------"
 ls /Users/travis/build/flaps16/CITestTwo/
 echo "-----------------------------"
