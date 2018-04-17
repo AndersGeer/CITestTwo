@@ -7,30 +7,30 @@ project="ci-build"
 
 echo "Attempting to build $project for Windows"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
--batchmode \
--nographics \
--silent-crashes\
--logFile $(pwd)/unityWin.log \
--projectPath $(pwd) \
--buildWindowsPlayer "$(pwd)/Build/windows/$project.app" \
--testResults $(pwd)/unityWinTests.xml \
--runTests \
--quit
+  -batchmode \
+  -nographics \
+  -silent-crashes\
+  -logFile $(pwd)/unityWin.log \
+  -projectPath $(pwd) \
+  -buildWindowsPlayer "$(pwd)/Build/windows/$project.app" \
+  -testResults $(pwd)/unityWinTests.xml \
+  -runTests \
+  -quit
 
 echo 'Logs from windows build'
 cat $(pwd)/unityWin.log
 
 echo "Attempting to build $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
--batchmode \
--nographics \
--silent-crashes\
--logFile $(pwd)/unity.log \
--projectPath $(pwd) \
--buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
--testResults $(pwd)/unityTests.xml \
--runTests \
--quit
+  -batchmode \
+  -nographics \
+  -silent-crashes\
+  -logFile $(pwd)/unity.log \
+  -projectPath $(pwd) \
+  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -testResults $(pwd)/unityTests.xml \
+  -runTests \
+  -quit
 
 ls /Users/travis/build/flaps16/CITestTwo/
 echo 'Logs from build'
