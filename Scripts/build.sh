@@ -40,10 +40,7 @@ echo "-----------------------------"
 echo "Attempting to test $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -runTests \
-  -projectPath $(pwd) \
-  -testResults $(pwd)/unityTests.log \
-  -testPlatform editmode \
-  -quit
+  -projectPath $(pwd) 
   
 echo "-----------------------------"
 ls $(pwd)
