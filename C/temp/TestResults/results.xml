@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Failed(Child)" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="1" engine-version="3.5.0.0" clr-version="2.0.50727.1433" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.133883">
+  <test-suite type="TestSuite" id="1012" name="CiTestThree" fullname="CiTestThree" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.133883" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="1">
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1017" name="Assembly-CSharp-Editor.dll" fullname="C:/Users/Administrator/Desktop/CITestTwo/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.074489" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="1">
+      <properties>
+        <property name="_PID" value="9312" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1013" name="EditModeTests" fullname="EditModeTests" classname="EditModeTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.065567" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1014" name="EditModeTestsSimplePasses" fullname="EditModeTests.EditModeTestsSimplePasses" methodname="EditModeTestsSimplePasses" classname="EditModeTests" runstate="Runnable" seed="1404431974" result="Passed" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.005252" asserts="0" />
+        <test-case id="1015" name="EditModeTestsSimplePassesFail" fullname="EditModeTests.EditModeTestsSimplePassesFail" methodname="EditModeTestsSimplePassesFail" classname="EditModeTests" runstate="Runnable" seed="1940377520" result="Failed" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.011970" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+            <stack-trace><![CDATA[at EditModeTests.EditModeTestsSimplePassesFail () [0x00002] in C:\Users\Administrator\Desktop\CITestTwo\Assets\Editor\EditModeTests.cs:17
+]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1016" name="EditModeTestsWithEnumeratorPasses" fullname="EditModeTests.EditModeTestsWithEnumeratorPasses" methodname="EditModeTestsWithEnumeratorPasses" classname="EditModeTests" runstate="Runnable" seed="105228534" result="Passed" start-time="2018-04-17 09:39:37Z" end-time="2018-04-17 09:39:37Z" duration="0.010247" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
