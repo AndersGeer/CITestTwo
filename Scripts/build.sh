@@ -34,7 +34,7 @@ echo "Attempting to build $project for OS X"
   -runTests \
   -quit
 echo "-----------------------------"
-ls /Applications/Unity/Unity.app/Contents
+ls /Applications/Unity/Unity.app/Contents/UnityExtensions
 echo "-----------------------------"
 
 echo "Attempting to test $project for OS X"
