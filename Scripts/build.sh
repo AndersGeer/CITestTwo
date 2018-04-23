@@ -6,41 +6,41 @@
 
 project="ci-build"
 
-echo "Attempting to build $project for Windows"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -batchmode \
-  -nographics \
-  -silent-crashes\
-  -logFile $(pwd)/unityWin.log \
-  -projectPath $(pwd) \
-  -buildWindowsPlayer "$(pwd)/Build/windows/$project.app" \
-  -testResults /unityWinTests.xml \
-  -runTests \
-  -quit
+# echo "Attempting to build $project for Windows"
+# /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+#   -batchmode \
+#   -nographics \
+#   -silent-crashes\
+#   -logFile $(pwd)/unityWin.log \
+#   -projectPath $(pwd) \
+#   -buildWindowsPlayer "$(pwd)/Build/windows/$project.app" \
+#   -testResults /unityWinTests.xml \
+#   -runTests \
+#   -quit
 
 
-echo 'Logs from windows build'
-cat $(pwd)/unityWin.log
+# echo 'Logs from windows build'
+# cat $(pwd)/unityWin.log
 
-echo "Attempting to build $project for OS X"
-/Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -batchmode \
-  -nographics \
-  -silent-crashes\
-  -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
-  -testResults /unityTests.xml \
-  -runTests \
-  -quit
-echo "-----------------------------"
-ls /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity
-echo "-----------------------------"
+# echo "Attempting to build $project for OS X"
+# /Applications/Unity/Unity.app/Contents/MacOS/Unity \
+#   -batchmode \
+#   -nographics \
+#   -silent-crashes\
+#   -logFile $(pwd)/unity.log \
+#   -projectPath $(pwd) \
+#   -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+#   -testResults /unityTests.xml \
+#   -runTests \
+#   -quit
+
 
 echo "Attempting to test $project for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -runTests \
-  -projectPath $(pwd) 
+  -projectPath $(pwd) \
+  -testRestults $(pwd)/restults/testResults.xml \
+  -testPlatform editmode
   
 echo "-----------------------------"
 ls $(pwd)
