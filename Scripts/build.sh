@@ -9,7 +9,7 @@
 echo "Running editor unit tests for ${UNITYCI_PROJECT_NAME}"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
 	-batchmode \
-#	-nographics \
+	-nographics \
 #	-silent-crashes \
 	-logFile $(pwd)/unity.log \
 	-projectPath /Users/travis/build/flaps16/CITestTwo/ \
