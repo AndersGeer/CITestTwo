@@ -35,9 +35,11 @@ project="ci-build"
 #   -quit
 
 
-echo "Attempting to test $project for OS X"
+echo "Attempting to test $project"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -runTests \
+  -bacthmode \
+  -runEditorTests \
+#  -runTests \
   -projectPath $(pwd) \
   -testRestults $(pwd)/restults/testResults.xml \
   -testPlatform editmode
