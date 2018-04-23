@@ -8,14 +8,14 @@
 ## Run the editor unit tests
 echo "Running editor unit tests for ${UNITYCI_PROJECT_NAME}"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-	-batchmode \
-	-nographics \
+-batchmode \
+-nographics \
 #	-silent-crashes \
 #	-logFile /Users/travis/build/flaps16/CITestTwo/unity.log \
-	-projectPath /Users/travis/build/flaps16/CITestTwo/ \
-	-runTests \
-	-testRestults /Users/travis/build/flaps16/CITestTwo//results/testResults.xml \
-	-testPlatform editmode 
+-projectPath /Users/travis/build/flaps16/CITestTwo/ \
+-runTests \
+-testRestults /Users/travis/build/flaps16/CITestTwo//results/testResults.xml \
+-testPlatform editmode 
 #	-quit
 
 rc0=$?
