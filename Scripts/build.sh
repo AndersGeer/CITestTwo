@@ -6,7 +6,23 @@
 #  -projectPath argument to point to the right location.
 
 ## Run the editor unit tests
+echo "Running editor unit tests for ${UNITYCI_PROJECT_NAME}"
+/Applications/Unity/Unity.app/Contents/MacOS/Unity \
+	-batchmode \
+	-nographics \
+	-silent-crashes \
+	-logFile $(pwd)/unity.log \
+	-projectPath $(pwd) \
+	-runTests \
+	-testRestults $(pwd)/results/testResults.xml \
+	-testPlatform editmode \
+	-quit
 
+rc0=$?
+echo "Unit test logs"
+cat $(pwd)/results/testResults.xml
+# exit if tests failed
+if [ $rc0 -ne 0 ]; then { echo "Failed unit tests"; exit $rc0; } fi
 
 ## Make the builds
 # Recall from install.sh that a separate module was needed for Windows build support
