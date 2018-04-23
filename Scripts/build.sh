@@ -8,7 +8,7 @@
 ## Run the editor unit tests
 echo "Running editor unit tests for ${UNITYCI_PROJECT_NAME}"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-#	-batchmode \
+	-batchmode \
 #	-nographics \
 #	-silent-crashes \
 	-logFile $(pwd)/unity.log \
