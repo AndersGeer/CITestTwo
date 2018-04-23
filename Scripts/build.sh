@@ -35,15 +35,17 @@ project="ci-build"
 #   -quit
 
 
-echo "Attempting to test $project"
+## Run the editor unit tests
+echo "Running editor unit tests for ${UNITYCI_PROJECT_NAME}"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
-  -bacthmode \
-  -runEditorTests \
-#  -runTests \
-  -projectPath $(pwd) \
-#  -testRestults $(pwd)/restults/testResults.xml \
-  -editorTestsResultFile $(pwd)/testResults.xml
-#  -testPlatform editmode
+	-batchmode \
+	-nographics \
+	-silent-crashes \
+	-logFile $(pwd)/unity.log \
+	-projectPath "$(pwd)/${UNITYCI_PROJECT_NAME}" \
+	-runEditorTests \
+	-editorTestsResultFile $(pwd)/test.xml \
+	-quit
   
 echo "-----------------------------"
 ls $(pwd)
