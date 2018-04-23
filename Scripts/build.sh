@@ -42,8 +42,8 @@ echo "Attempting to test $project"
 #  -runTests \
   -projectPath $(pwd) \
 #  -testRestults $(pwd)/restults/testResults.xml \
-  -editorTestsResultFile $(pwd)/testResults.xml \
-  -testPlatform editmode
+  -editorTestsResultFile $(pwd)/testResults.xml
+#  -testPlatform editmode
   
 echo "-----------------------------"
 ls $(pwd)
