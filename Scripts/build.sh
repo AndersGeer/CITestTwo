@@ -12,9 +12,9 @@ echo "Running editor unit tests for ${UNITYCI_PROJECT_NAME}"
 	-nographics \
 	-silent-crashes \
 	-logFile $(pwd)/unity.log \
-	-projectPath $(pwd) \
+	-projectPath /Users/travis/build/flaps16/CITestTwo/ \
 	-runTests \
-	-testRestults $(pwd)/results/testResults.xml \
+	-testRestults /Users/travis/build/flaps16/CITestTwo//results/testResults.xml \
 	-testPlatform editmode \
 	-quit
 
